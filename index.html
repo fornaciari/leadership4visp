@@ -87,9 +87,10 @@
 <div class="slides">
 
 <script>
-  zoom.to({
-    element: document.querySelector( 'p' )
-  });
+    var password = prompt("Please enter the password:");
+    if (password !== "yourPassword") {
+        document.body.innerHTML = "Access denied";
+    }
 </script>
 
 	<!-- <section>
