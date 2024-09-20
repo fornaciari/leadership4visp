@@ -1,40 +1,960 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
+<!--		<link rel="stylesheet" href="dist/reset.css">-->
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/leadership-tf.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+<style>
+	table.down {
+		position: relative;
+  		left: 0px;
+  		top: 350px;
+  		}
+	h2.up {
+		position: relative;
+  		left: 0px;
+  		top: -0px;
+  		}
+	.tab {
+       display:inline-block;
+       margin-left: 40px;
+	}
+	/* Create two equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 47%;
+	  padding: 10px;
+	}
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+
+.quote {
+	font-style: italic;
+	}
+
+.smallcaps {
+	font-variant: small-caps;
+}
+
+.red {
+	color:red;
+	}
+	
+.divcom {
+	font-style: italic;
+	text-align: left;
+	position: relative;
+	left: 230px;
+	}
+
+.source {
+	font-style: italic;
+	text-align: right;
+	}
+
+.relicon {
+	font-weight: 900;
+	font-size: 70px;
+	color:Limegreen;
+	}
+
+.unrelicon {
+	font-weight: 900;
+	font-size: 70px;
+	color:red;
+	}
+						
+		</style>
+
+<body>
+<div class="reveal">
+<div class="slides">
+	<section>
+		<section>
+			<img src="tf_media/loghi/pds.png" style="position:relative; left:0px; top:0px; width:10%">
+			<h1 style="position:relative; top:-20px">Leadership<br>crash course</h1>
+			<h3 style="position:relative; top:-30px">Tommaso Fornaciari</h3>
+			<p style="position:relative; top:50px">IV corso Vice Ispettori Tecnici della Polizia di Stato</p>
+			<p style="position:relative; top:30px;">Spoleto, 12 ottobre 2023</p>
+		</section>
+	</section>
+
+	<section>
+		<section>
+			<h1>outline</h1>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Modulo I</td>
+					<td>Intro</td>
+				</tr>
+				<tr>
+					<td>Modulo II</td>
+					<td>Parole</td>
+				</tr>
+				<tr>
+					<td>Modulo III</td>
+					<td>Corpo</td>
+				</tr>
+				<tr>
+					<td>Modulo IV</td>
+					<td>Pratica</td>
+				</tr>
+			</table>
+		</section>
+	</section>
+
+	<section>
+		<section>
+			<h1>intro</h1>
+		</section>
+		<section>
+			<h2>pain-gain</h2>
+		</section>
+		<section>
+			<h2>leadership etica</h2>
+		</section>
+		<section>
+			<ul>
+				<li><span class="red">Normatività</span>: aderenza ai valori (Hogg, 2001);</li>
+				<li><span class="red">Qualità</span> del leader;</li>
+				<li><span class="red">Condotte</span> appropriate;</li>
+				<li><span class="red">Influenza positiva</span>: obiettivi <span class="red">al di là</span> degli interessi personali </li>
+			</ul>
+		</section>
+		<section>
+			<h2>Profiling</h2>
+		</section>
+		<section>
+			<h3>osservare, farsi domande</h3>
+			<ul>
+				<li>Chi ho davanti?</li>
+				<!-- <li>Che obiettivi ha?</li> -->
+				<li>Cosa desidera?</li>
+				<li>Cosa teme?</li>
+				<li>Come si pone?</li>
+				<li>...?</li>
+				<!-- <ul>
+					<li>Estroverso o introverso?</li>
+					<li>Coinvolto o distante?</li>
+					<li>Attivo o passivo?</li>
+					<li>...?</li>
+				</ul> -->
+				</ul>
+		</section>
+		<section>
+			<h2>Lessons from the chimps</h2>
+		</section>
+		<section>
+			<p class="quote" style="position:relative; left:-200px; top:50px">I describe in 'Chimpanzee Politics'<br>how the alpha male needs
+				<br>broad <span class="red">support</span> to reach the top spot. 
+				<br>He needs some <span class="red">close allies</span><br>and he needs many group members<br>to be on his side.</p>
+			<p style="position:relative; left:-200px; top:50px">Frans de Waal</p>
+			<img src="tf_media/leadership/dewaal-nobg.png" style="position:relative; left:150px; top:-300px; width:100%">
+		</section>
+		<section>
+			<ul style="position:relative; left:-200px; top:150px">
+				<li>La posizione di leader è instabile e<br>costantemente minacciata</li>
+				<li>Tendenza a:</li>
+				<ul>
+					<li>Negoziare</li>
+					<li>Stabilire alleanze</li>
+				</ul>
+				<li>Leadership collettiva</li>
+			</ul>
+			<img src="tf_media/leadership/chimpanzee-nobg.png" style="position:relative; left:200px; top:-250px; width:80%">
+		</section>
+		<section>
+			<P>Leader amichevole e supportivo:</P>
+			<ul>
+				<li><span class="red">Supporto</span> con membri deboli</li>
+				<li><span class="red">Condivisione</span> delle risorse</li>
+				<li>Tolleranza, <span class="red">equilibrio</span> nei conflitti</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Lessons from the top</h2>
+		</section>
+		<section>
+			<p style="position:relative; left:-250px; top:100px">Le 5 qualità del leader:</p>
+			<ol style="position:relative; left:-250px; top:100px">
+				<li class="fragment fade-in" data-fragment-index="1" >Essere <span class="red">sé stessi</span>,<br>col proprio <span class="red">stile</span>;</li>
+				<li class="fragment fade-in" data-fragment-index="2" >Essere <span class="red">autorevole</span>:<br>conoscere i particolari;</li>
+				<li class="fragment fade-in" data-fragment-index="3" >Essere <span class="red">giusto</span>;</li>
+				<li class="fragment fade-in" data-fragment-index="4" ><span class="red">Aiutare</span>;</li>
+				<li class="fragment fade-in" data-fragment-index="5" >Creare <span class="red">affettività</span>: <span class="red">q.b.</span>.</li>
+			</ol>
+			<p style="position:relative; left:-70px; top:200px">Julio Velasco</p>
+			<img src="tf_media/leadership/velasco2-nobg.png" style="position:relative; left:300px; top:-500px; width:100%">
+		</section>
+		<section>
+			<iframe src="https://www.youtube.com/embed/6GRxsEqGRuE?si=f_5WC4ZHEnbVG3J5" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+		</section>
+		<section>
+			<p class="quote">Se vogliamo guidare gli altri, dobbiamo essere ottimisti</p>
+		</section>
+		<section>
+			<h3>divide et impera</h3>
+			<ul>
+				<li>Obiettivi <span class="red">difficili</span> ma <span class="red">raggiungibili</span>;</li>
+				<li>Suddivisi in obiettivi <span class="red">parziali</span> e <span class="red">facilmente raggiungibili</span>.</li>
+			</ul>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td rowspan="2">Criticare</td>
+					<td rowspan="2">&rarr;</td>
+					<td>i <span class="red">comportamenti</span></td>
+					<td>&#128077;&#127996;</td>
+				</tr>
+				<tr>
+					<td>le persone</td>
+					<td>&#128078;&#127996;</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="border-bottom: none;">Cercare</td>
+					<td rowspan="2" style="border-bottom: none;">&rarr;</td>
+					<td>il <span class="red">motivo</span></td>
+					<td>&#128077;&#127996;</td>
+				</tr>
+				<tr>
+					<td>il colpevole</td>
+					<td>&#128078;&#127996;</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<p class="quote" style="position:relative; left:0px; top:200px; width:50%">Se fai uno sbaglio,<br>chiedi scusa.
+				<br>E abbi sempre<br>l'attenuante<br>della <span class="red">buona fede</span>.</p>
+			<p style="position:relative; left:0px; top:200px; width:50%">Enzo Biagi</p>
+			<img src="tf_media/leadership/enzo-nobg.png" style="position:relative; left:250px; top:-300px; width:60%">	
+		</section>
+		<section>
+			<ul style="position:relative; left:-330px; top:130px">
+				<li>Motivo vs. colpevole, 2:13</li>
+				<li>Rispetto dei ruoli, 2:50</li>
+				<li>Libertà di sbagliare,<br>6:35, 9:00</li>
+				<li>Sì sì però è no, 8:20</li>
+				<li>Dove migliorare, 12:00</li>
+				<li>Nel dubbio, chiedere,<br>15:25</li>
+				<li>Rischiare, 17:42</li>
+			</ul>
+			<iframe src="https://www.youtube.com/embed/s8CHm6pBOOE?si=kBA0xV4odToaGbzg" style="position:relative; left:250px; top:-300px" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+		</section>
+		<section>
+			<ul style="position:relative; left:-300px; top:250px">
+				<li>Obiettivi chiari, 0:00</li>
+			</ul>
+			<iframe src="https://www.youtube.com/embed/HaiNLv9HdI0?si=4X5kOcPuYchGXRyI" style="position:relative; left:250px; top:0px" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+		</section>
+		<!-- <section>
+			<p></p>
+		</section> -->
+	</section>
+
+
+
+
+
+
+	<section>
+		<section>
+			<h1>parole</h1>
+		</section>
+		<section>
+			<h3>obiettivi</h3>
+			<p>carisma</p>
+			<p>efficacia</p>
+		</section>
+	<section>
+			<p style="position:relative; left:250px; top:200px">Paul Watzlawick<br><span class="red">Assiomi</span> fondamentali<br>della comunicazione umana</p>
+			<img src="tf_media/leadership/watzlawick_1000x750_traspthres.1.png" style="position:relative; left:-200px; top:-100px; width:70%">
+		</section>
+		<!-- <section>
+			<ul>
+				<li>Non si può non comunicare</li>
+				<li>Ogni comunicazione ha un aspetto di contenuto e un aspetto di relazione, tale che quest'ultimo categorizza il primo ed è quindi una meta-comunicazione</li>
+				<li>La natura di una relazione dipende dalla punteggiatura delle sequenze di comunicazione tra i comunicanti</li>
+				<li>La comunicazione umana è composta da codici analogici e numerici</li>
+				<li>Tutte le sequenze di comunicazione sono simmetriche oppure complementari, a seconda che la relazione tra i comunicanti sia basata su differenze oppure su parità</li>
+			</ul>
+		</section> -->
+		<section>
+			<ol>
+				<li><span class="red">Non si può non comunicare</span></li>
+				<li>Contenuto/<span class="red">relazione</span></li>
+				<li>Punteggiatura</li>
+				<li>Codici <span class="red">analogici</span>/numerici</li>
+				<li>Sequenze simmetriche/<span class="red">complementari</span></li>
+			</ol>
+		</section>
+		<section>
+			<h3>take home</h3>
+			<p>responsabilità</p>
+			<p>auto-controllo</p>
+		</section>
+		<section>
+			<p>Funzioni del linguaggio:</p>
+			<ul>
+				<li>Informativa</li>
+				<!-- <li>Persuasiva</li> -->
+				<li>Prescrittiva</li>
+				<li>Suggestiva</li>
+				<li><span class="red">Evocativa</span></li>
+				<li>...</li>
+			</ul>
+		</section>
+		<section>
+			<p class=quote style="position:relative; left:-200px; top:200px">There is nothing more <span class="red">delightful</span><br>than planting <span class="red">flower seeds</span><br>and <span class="red">not knowing</span><br>what kind of flowers<br>are going to come up</p>
+			<p style="position:relative; left:-200px; top:200px">Milton Erickson<br></p>
+			<!-- <img src="tf_media/leadership/erickson_traspthres.1.png" style="position:relative; left:-200px; top:-300px; width:40%"> -->
+			<img src="tf_media/leadership/erickson-nobg.png" style="position:relative; left:300px; top:-400px; width:50%">
+		</section>
+		<section>
+			<p class=quote style="position:relative; left:-250px; top:200px">The mind is inherently <span class="red">embodied</span>.<br>Thought is mostly <span class="red">unconscious</span>.<br>Abstract concepts are<br>largely <span class="red">metaphorical</span>.</p>
+			<p style="position:relative; left:-250px; top:200px">George Lakoff</p>
+			<img src="tf_media/leadership/lakoff-nobg.png" style="position:relative; left:150px; top:-250px; max-width:120%; width:110%">
+		</section>
+		<section>
+			<p>Cos'è una metafora?</p>
+			<p class="fragment fade-in" data-fragment-index="1" class=quote>The essence of metaphor is understanding and experiencing one kind of <span class="red">thing</span> in terms of <span class="red">another</span>.</p>
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:0px">George Lakoff</p>
+		</section>
+		<section>
+			<p class=quote>We define our reality in terms of metaphors.</p>
+			<!-- <p class=quote>We draw inferences, set goals, make commitments, and execute plans, all on the basis of how we in part structure our experience, consciously and unconsciously, by means of metaphor.</p> -->
+			<p style="position:relative; left:0px; top:0px">George Lakoff</p>
+		</section>
+		<section>
+			<p>Essere <span class="red">su</span> o <span class="red">giù</span> di morale.</p>
+			<p>Essere <span class="red">vicini</span> o <span class="red">lontani</span>.</p>
+			<p>Vedere la  <span class="red">luce</span> o brancolare nel <span class="red">buio</span>.</p>
+			<p>I progetti <span class="red">vanno avanti</span> o <span class="red">sono bloccati</span>.</p>
+			<p>Comportarsi in modo <span class="red">caloroso</span> o <span class="red">freddo</span>.</p>
+		</section>
+
+
+		<!-- <section>
+			<img src="tf_media/leadership/attacchisci.png" style="position:relative; left:0px; top:0px; width:80%">
+		</section> -->
+		<section>
+			<h2 style="position:relative; left:385px; border-width:3px; border-style:solid; border-color:#FF0000; width: 20%;">frame</h2>
+		</section>
+		<section>
+			<img src="tf_media/leadership/orso-nobg.png" style="position:relative; left:0px; top:0px; width:70%">
+		</section>
+		<section>
+			<img src="tf_media/leadership/thesaurus.png" style="position:relative; left:0px; top:-30px; width:65%">
+			<div style="position:absolute; left:360px; top:215px; 
+			border: 5px solid; color:red; 
+			height: 40px; width: 80px; 
+			border-bottom-left-radius: 50% 50%;
+			border-bottom-right-radius: 50% 50%;
+			border-top-left-radius: 50% 50%;
+			border-top-right-radius: 50% 50%;"></div>
+		</section>
+		<section>
+			<p><span class="red">Evocare</span> un frame lo rinforza.</p>
+		</section>
+		<section>
+			<p><span class="red">Negare</span> un frame lo rinforza.</p>
+		</section>
+		<section>
+			<p class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 0px; top: 300px;">Non pensate a un bicchiere di vino.</p>
+			<p class="fragment fade-in" data-fragment-index="1" style="position: relative; left: 0px; top: -50px;">Era bianco o rosso?</p>
+			<img src="tf_media/leadership/wine04.png"  class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top: -50px; width:60%">
+		</section>
+		<section>
+			<p>Come stai, dici.</p>
+			<p>Come dici, stai.</p>
+			<p>E induci a stare.</p>
+			<!-- p 8 -->
+		</section>
+
+
+
+
+
+
+		<section>
+			<h2>Cervelli e ormoni</h2>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Cervello rettile</td>
+					<td>&rarr;</td>
+					<td>Attenzione</td>
+				</tr>
+				<tr>
+					<td>Sistema limbico</td>
+					<td>&rarr;</td>
+					<td>Emozione</td>
+				</tr>
+				<tr>
+					<td>Neocorteccia</td>
+					<td>&rarr;</td>
+					<td>Ragione</td>
+				</tr>
+			</table>
+			<p>(McLean, 2021)</p>
+		</section>
+		<section>
+			<h3>Cervello rettile</h3>
+			<p>Freeze, flight or fight</p>
+			<ul>
+				<li>Frasi brevi</li>
+				<li>Verbi d'azione</li>
+				<li>Tempo presente</li>
+				<li>Modo indicativo/imperativo</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Cervello limbico</h3>
+			<p>Interesse, emozioni, empatia</p>
+			<ul>
+				<li>Pronomi personali</li>
+				<li>Persone: 2^ personale, 1^ prlurale</li>
+			</ul>
+		</section>
+		<section>
+			<p>Le <span class="red">emozioni</span> sono <span class="red">ipotesi</span>.</p>
+			<p>(Barrett, 2017)</p>
+		</section>
+		<section>
+			<h3>empatia</h3>
+			<p class="fragment fade-in" data-fragment-index="1" style="font-style: italic">L'empatia genera piacere per la sua capacità di farci sentire coinvolti nei confronti degli altri, genera benessere perché ci fa sentire più buoni.</p>
+			<p class="fragment fade-in" data-fragment-index="1" style="font-style: italic">Ma è tutt'altro che una valida guida morale e decisionale.</p>
+			<p class="fragment fade-in" data-fragment-index="1" style="font-style: italic">L'empatia ci porta spesso a emettere <span class="red">giudizi errati</span> e a fare <span class="red">scelte</span> politiche <span class="red">irrazionali</span> e <span class="red">ingiuste</span>.</p>
+			<p class="fragment fade-in" data-fragment-index="1" >(Bloom, 2017)</p>
+		</section>
+		<section>
+			<h3>Neocorteccia</h3>
+			<p>Logica</p>
+			<ul>
+				<li>Call to action</li>
+			</ul>
+		</section>
+		<!-- <section>
+			<img src="tf_media/leadership/sanfrancesco2.png" style="position:relative; left:-180px; top:20px; width:60%">
+			<p style="position:relative; left:250px; top:-350px">L'abito fa il monaco</p>
+		</section> -->
+		<section>
+			<table>
+				<tr>
+					<td>Parole</td>
+					<td>&rarr;</td>
+					<td>Ormoni</td>
+					<td>&rarr;</td>
+					<td>Realtà</td>
+				</tr>
+				<tr class="fragment fade-in">
+					<td>Narrazione</td>
+					<td>&rarr;</td>
+					<td>Stato della mente</td>
+					<td>&rarr;</td>
+					<td>Visione</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3>Cortisolo</h3>
+			<p>Stress, allarme</p>
+			<p>+ muscoli, - cervello</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Houston, we have a problem</p>
+			<!-- <img src="tf_media/leadership/apollo-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-20px; width:80%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-120px">Apollo 13, 1995</p> -->
+			<img src="tf_media/leadership/apollo-nobg.png"style="position:relative; left:0px; top:-20px; width:80%">
+			<p style="position:relative; left:0px; top:-120px">Apollo 13, 1995</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Terremoto e tragedia...</p>
+			<!-- <img src="tf_media/leadership/attila.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:0px; width:100%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-100px">Attila flagello di Dio, 1982</p> -->
+			<img src="tf_media/leadership/attila.png" style="position:relative; left:0px; top:0px; width:100%">
+			<p style="position:relative; left:0px; top:-100px">Attila flagello di Dio, 1982</p>
+		</section>
+		<section>
+			<h3>Dopamina</h3>
+			<p>Scoperta, aspettativa, entusiasmo</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Dai, dai, dai!</p>
+			<!-- <img src="tf_media/leadership/boris_nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-50px; width:100%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-150px">Boris, 2007</p> -->
+			<img src="tf_media/leadership/boris3.png" style="position:relative; left:0px; top:0px; width:60%">
+			<p style="position:relative; left:0px; top:-100px; text-shadow: 0em 0em .2em black">Boris, 2007</p>
+		</section>
+		<section>
+			<h3>Serotonina</h3>
+			<p>Fiducia</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Andiamo e portiamo a casa la vittoria!</p>
+			<!-- <img src="tf_media/leadership/cfi4-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-50px; width:100%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-170px">I cavalieri che fecero l'impresa, 2001</p> -->
+			<img src="tf_media/leadership/cfi4-nobg.png" style="position:relative; left:0px; top:-50px; width:100%">
+			<p style="position:relative; left:0px; top:-170px; text-shadow: 0em 0em .2em black">I cavalieri che fecero l'impresa, 2001</p>
+		</section>
+		<section>
+			<h3>Adrenalina</h3>
+			<p>Attenzione, concentrazione</p>
+			<p>Fight-or-flight</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Carpe diem</p>
+			<!-- <img src="tf_media/leadership/attimofuggente-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-60px; width:100%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-170px">L'attimo fuggente, 1989</p> -->
+			<img src="tf_media/leadership/attimofuggente-nobg.png" style="position:relative; left:0px; top:-60px; width:100%">
+			<p style="position:relative; left:0px; top:-170px">L'attimo fuggente, 1989</p>
+		</section>
+		<section>
+			<h3>Ossitocina</h3>
+			<p>Empatia, affetto</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">È il tempo che tu hai perduto per la tua rosa che ha fatto la tua rosa così importante.</p>
+			<!-- <img src="tf_media/leadership/rose.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-30px; width:50%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-100px">Le Petit Prince, Antoine de Saint-Exupéry, 1943</p> -->
+			<img src="tf_media/leadership/rose.png" style="position:relative; left:0px; top:-30px; width:50%">
+			<p style="position:relative; left:0px; top:-100px">Le Petit Prince, Antoine de Saint-Exupéry, 1943</p>
+		</section>
+		<section>
+			<h3>Testosterone</h3>
+			<p>Sfida, audacia</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Do or do not. There is no try.</p>
+			<!-- <img src="tf_media/leadership/yoda-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-50px; width:75%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-150px">The Empire Strikes Back, 1980</p> -->
+			<img src="tf_media/leadership/yoda-nobg.png" style="position:relative; left:0px; top:-50px; width:75%">
+			<p style="position:relative; left:30px; top:-150px; text-shadow: 0em 0em 0.2em black">The Empire Strikes Back, 1980</p>
+		</section>
+		<section>
+			<h3>Endorfine</h3>
+			<p>Benessere, appagamento</p>
+		</section>
+		<section>
+			<h3>Key-phrases</h3>
+			<p class="quote">Che cos'hai nel cervello, Dexter, criceti?</p>
+			<!-- <img src="tf_media/leadership/dexter-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-50px; width:100%">
+			<p class="fragment fade-in" data-fragment-index="1" style="position:relative; left:0px; top:-100px">Aldo, Giovanni e Giacomo, Tel chi el telùn, 1999</p> -->
+			<img src="tf_media/leadership/dexter-nobg.png" style="position:relative; left:0px; top:-50px; width:100%">
+			<p style="position:relative; left:0px; top:-100px">Aldo, Giovanni e Giacomo, Tel chi el telùn, 1999</p>
+		</section>
+
+
+
+		<section>
+			<h2>use case</h2>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<th>Frase</th>
+					<th>Fatto</th>
+					<th>Trusimo</th>
+				</tr>
+				<tr>
+					<td>Ora, il nostro compito per oggi...</td>
+					<td class="fragment fade-in" data-fragment-index="1">sì</td>
+					<td class="fragment fade-in" data-fragment-index="2">sì</td>
+				</tr>
+				<tr>
+					<td>Abbiamo 3 ore a nostra disposizione.</td>
+					<td class="fragment fade-in" data-fragment-index="3">sì</td>
+					<td class="fragment fade-in" data-fragment-index="4">sì</td>
+				</tr>
+				<tr>
+					<td>E noi siamo in 18.</td>
+					<td class="fragment fade-in" data-fragment-index="5">sì</td>
+					<td class="fragment fade-in" data-fragment-index="6">sì</td>
+				</tr>
+				<tr>
+					<td>Quindi possiamo permetterci...</td>
+					<td class="fragment fade-in" data-fragment-index="7">no</td>
+					<td class="fragment fade-in" data-fragment-index="8" >...sì?</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<th>Frase</th>
+					<th>Ormone</th>
+					<th>Cervello</th>
+				</tr>
+				<tr>
+					<td><span class="red">Ora</span>, il nostro <span class="red">compito</span> per <span class="red">oggi</span>...</td>
+					<td class="fragment fade-in" data-fragment-index="1" >adrenalina, cortisolo</td>
+					<td class="fragment fade-in" data-fragment-index="2" >rettile</td>
+				</tr>
+				<tr>
+					<td>Abbiamo 3 ore a <span class="red">nostra</span> disposizione.</td>
+					<td class="fragment fade-in" data-fragment-index="3" >ossitocina</td>
+					<td class="fragment fade-in" data-fragment-index="4" >limbico</td>
+				</tr>
+				<tr>
+					<td>E <span class="red">noi</span> siamo in 18.</td>
+					<td class="fragment fade-in" data-fragment-index="5" >ossitocina</td>
+					<td class="fragment fade-in" data-fragment-index="6" >limbico</td>
+				</tr>
+				<tr>
+					<td><span class="red">Quindi</span> possiamo <span class="red">permetterci</span>...</td>
+					<td class="fragment fade-in" data-fragment-index="7" >endorfine</td>
+					<td class="fragment fade-in" data-fragment-index="8" >neocorteccia</td>
+				</tr>
+			</table>
+		</section>
+
+
+
+
+
+
+
+
+		<section>
+			<h2>Museo degli orrori</h2>
+			<p>(e come correggerli)</p>
+		</section>
+		<section>
+			<p class="quote">Le persone ti attribuiscono il <span class="red">valore</span> che <span class="red">tu</span> dici loro di avere.</p>
+			<p>(Borzacchiello, 2021)</p>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Scusa il disturbo</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="1" style="position: relative; left: -50px;">Hai un momento?</td>
+				</tr>
+				<tr>
+					<td>Ti rubo solo un momento</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="2" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="2" style="position: relative; left: -50px;">Vado dritto al punto</td>
+				</tr>
+				<tr>
+					<td>Hai capito?<br>Mi sono spiegato?</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="3" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="3" style="position: relative; left: -50px;">È tutto chiaro?</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Grazie</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="1" style="position: relative; left: -50px;">Apprezzo molto la tua disponibilità</td>
+				</tr>
+				<tr>
+					<td>Ti faccio una domanda stupida</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="2" style="position: relative; left: 100px;">?</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Fidati</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="3" style="position: relative; left: 100px;">?</td>
+					<td></td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Correggimi se sbaglio</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="1" style="position: relative; left: -50px;">Dimmi cosa ne pensi</td>
+				</tr>
+				<tr>
+					<td>A dire il vero...</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="2" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="2" style="position: relative; left: -50px;"></td>
+				</tr>
+				<tr>
+					<td>Dai retta a un matto...</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="3" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="3" style="position: relative; left: -50px;"></td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td>Stai tranquillo</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="1" style="position: relative; left: -50px;">Capisco</td>
+				</tr>
+				<tr>
+					<td>Andrà tutto bene</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="2" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="2" style="position: relative; left: -50px;">Posso fare qualcosa?</td>
+				</tr>
+				<tr>
+					<td>Sono a disposizione per qualsiasi cosa</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="3" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="3" style="position: relative; left: -50px;"></td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h2>Ipse dixit</h2>
+		</section>
+		<section>
+			<ul>
+				<li>Me ne occupo io</li>
+				<li>Adesso risolvo</li>
+				<li>Capisco</li>
+				<li>Ascoltami</li>
+				<li>Le cose stanno così:...</li>
+				<li>Vado al punto:...</li>
+				<li>Per te, significa che...</li>
+			</ul>
+		</section>
+		<section>
+			<table>
+				<tr>
+					<td style="border-right: solid 1px"></td>
+					<td style="border-right: solid 1px">+</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td style="border-right: solid 1px; border-bottom: none;">tempo</td>
+					<td style="border-right: solid 1px; border-bottom: none;">presente</td>
+					<td style="border-bottom: none;">futuro</td>
+				</tr>
+				<tr>
+					<td style="border-right: solid 1px; border-bottom: none;">modo</td>
+					<td style="border-right: solid 1px; border-bottom: none;">indicativo</td>
+					<td style="border-bottom: none;">condizionale</td>
+				</tr>
+				<tr>
+					<td style="border-right: solid 1px; border-bottom: none;">persona</td>
+					<td style="border-right: solid 1px; border-bottom: none;">prima</td>
+					<td style="border-bottom: none;">seconda</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+		<ul style="position:relative; left:150px; top:0px">
+			<li>spero</li>
+			<li>provo</li>
+			<li>vorrei</li>
+			<li>dovresti</li>
+			<li>faremo</li>
+			<li>vedremo</li>
+			<li>...</li>
+		</ul>
+		<img src="tf_media/leadership/banned-nobg.png" class="fragment fade-in" data-fragment-index="1" style="position:relative; left:-140px; top:-50px; width:40%">
+		</section>
+		<section>
+			<ul>
+				<li>Empatia</li>
+				<li>Impegno</li>
+				<li>Responsabilità</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Good practices</h3>
+			<ul>
+				<li class="fragment fade-in" data-fragment-index="1"><span class="red">Riconoscere</span> lo stato della mente dell'altro</li>
+				<li class="fragment fade-in" data-fragment-index="2"><span class="red">Accettare</span> lo stato della mente dell'altro</li>
+				<li class="fragment fade-in" data-fragment-index="3">Riconoscere l'<span class="red">intenzione positiva</span></li>
+				<li class="fragment fade-in" data-fragment-index="4">Accettare il <span class="red">silenzio</span></li>
+				<li class="fragment fade-in" data-fragment-index="5">Chi <span class="red">domanda</span>, comanda</li>
+			</ul>
+		</section>
+		<section>
+			<img src="tf_media/leadership/churchill-nobg.png" style="position:relative; left:250px; top:-50px; width:60%">
+			<p class="quote" style="position:relative; left:-200px; top:-600px">He who fails to plan<br>is planning to fail</p>
+			<p style="position:relative; left:-200px; top:-600px">Winston Churchill</p>
+		</section>
+		<!-- <section>
+			<p></p>
+		</section> -->
+</section>
+
+	<section>
+		<section>
+			<h1>corpo</h1>
+		</section>
+		<section>
+			<h3>obiettivi</h3>
+			<p>presenza</p>
+			<p>eleganza</p>
+		</section>
+		<section>
+			<p>Il corpo parla il linguaggio delle emozioni.</p>
+		</section>
+		<section>
+			<h3>Postura</h3>
+			<ul>
+				<li class="fragment fade-in" data-fragment-index="1">Elongazione assiale</li>
+				<li class="fragment fade-in" data-fragment-index="2">Radicamento</li>
+				<li class="fragment fade-in" data-fragment-index="3">Addominali</li>
+				<li class="fragment fade-in" data-fragment-index="4">Rombo</li>
+				<li class="fragment fade-in" data-fragment-index="5">Struttura-comodità</li>
+			</ul>
+			<!-- <p>Il sorriso è un rombo.</p> -->
+		</section>
+		<section>
+			<h3>Movimento</h3>
+			<table>
+				<tr>
+					<td>Occhi</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="1" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="1" style="position: relative; left: -50px;">sguardo diritto</td>
+				</tr>
+				<tr>
+					<td>Plesso solare</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="2" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="2" style="position: relative; left: -50px;"><span class="red">intenzione</span></td>
+				</tr>
+				<tr>
+					<td>Piedi</td>
+					<td>&rarr;</td>
+					<td class="fragment fade-out" data-fragment-index="3" style="position: relative; left: 100px;">?</td>
+					<td class="fragment fade-in" data-fragment-index="3" style="position: relative; left: -50px;">ciclo tallone-avampiede</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<p>Giù le mani dal volto.</p>
+		</section>
+		<section>
+			<p>Chi respira meglio, vince.</p>
+		</section>
+		<!-- <section>
+			<p></p>
+		</section> -->
+	</section>
+
+	<section>
+		<section>
+			<h1>pratica</h1>
+		</section>
+		<section>
+			<h3>obiettivi</h3>
+			<p>esplorazione</p>
+			<p>insight</p>
+		</section>
+	<section>
+			<p>Facciamo il gioco della verità...</p>
+		</section>
+	</section>
+
+	<!-- <section>
+		<img src="tf_media/leadership/lavanda.jpg" style="position:relative; left:200px; top:0px; width:70%">
+		<p style="position:relative; left:380px; top:-160px; text-align: left">Giotto<br>Cappella degli Scrovegni, 1303-1305</p>
+		<p class="quote" style="position:relative; left:-350px; top:-750px">ma chi vuol essere<br>grande tra voi<br>si farà vostro servitore</p>
+		<p style="position:relative; left:-350px; top:-750px">Mc 10,43</p>
+		<h2 style="position:relative; left:-350px; top:-650px">grazie</h2>
+	</section> -->
+	<section>
+		<h1>grazie</h1>
+		<img src="tf_media/leadership/aquila1-4.png" style="position:relative; left:0px; top:-70px; width:80%">
+		<p style="position:relative; left:0px; top:-70px;">tommaso.fornaciari@poliziadistato.it</p>
+	</section>
+	<!-- <section>
+		<img src="tf_media/leadership/aquila1-nobg.png" style="position:relative; left:0px; top:0px; width:100%">
+	</section> -->
+
+	<section>
+		<section>
+			<h1>bibliografia</h1>
+		</section>
+		<section>
+			<p align="justify">Barrett, Lisa Feldman. How emotions are made: The secret life of the brain. Pan Macmillan, 2017.</p>
+			<p align="justify">Bloom, Paul. "Empathy and its discontents." Trends in cognitive sciences 21.1 (2017): 24-31.</p>
+			<p align="justify">Borzacchiello, Paolo. Basta dirlo: Le parole da scegliere e le parole da evitare per una vita felice. Mondadori, 2021</p>
+		</section>
+		<section>
+			<p align="justify">Hogg, Michael A. "A social identity theory of leadership." Personality and social psychology review 5.3 (2001): 184-200.</p>
+			<p align="justify">Lakoff, George, and Mark Johnson. Metaphors we live by. University of Chicago press, 2008.</p>
+			<p align="justify">Maclean, Paul. "Brain evolution: The origins of social and cognitive behaviors." A Child's Brain. Routledge, 2021. 9-21.</p>
+		</section>
+		<section>
+			<p align="justify">De Waal, Frans, and Frans BM Waal. Chimpanzee politics: Power and sex among apes. JHU Press, 2007.</p>
+			<p align="justify"></p>
+			<p align="justify"></p>
+		</section>
+		<!-- <section>
+			<p align="justify"></p>
+			<p align="justify"></p>
+			<p align="justify"></p>
+		</section>
+		<section>
+			<p align="justify">De Waal, Frans, and Frans BM Waal. Chimpanzee politics: Power and sex among apes. JHU Press, 2007.</p>
+			<p align="justify"></p>
+			<p align="justify"></p>
+		</section> -->
+	</section>
+
+
+	</section>
+		
+
+
+
+
+
+
+
+</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/math/math.js"></script>
+<script>
+Reveal.initialize({
+	hash: true,
+	plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+});
+</script>
+</body>
 </html>
