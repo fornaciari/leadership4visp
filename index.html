@@ -95,7 +95,7 @@
 <div id="slides-container"></div>
 
 
-	<section data-visible="hidden">
+	<!-- <section data-visible="hidden">
 		<section data-visible="hidden">
 			<p>1.1</p>
 		</section>
@@ -131,7 +131,7 @@
 		<section data-visible="hidden">
 			<p>3.3</p>
 		</section>
-	</section>
+	</section> -->
 
 
 
@@ -1020,6 +1020,7 @@
         touch: true
       });
       loadSlides();
+	  Reveal.next();
     } else {
       errorMessage.textContent = 'Incorrect password, please try again.';
     }
@@ -1033,7 +1034,6 @@
     `;
     slidesContainer.innerHTML = slides;
     Reveal.sync();
-	Reveal.next();
   }
 
   Reveal.on('slidechanged', function(event) {
