@@ -985,24 +985,12 @@
 </div>
 </div>
 
-<!-- <script src="./reveal.js"></script> -->
-<script src="/leadership4visp/script.js?v=1"></script>
+<script src="./reveal.js"></script>
 <script src="./plugin/notes/notes.js"></script>
 <script src="./plugin/markdown/markdown.js"></script>
 <script src="./plugin/highlight/highlight.js"></script>
 <script src="./plugin/math/math.js"></script>
 <script>
-
-
-window.onload = function() {
-    const password = prompt('Enter the password:');
-    if (password !== 'yourPassword') {
-        alert('Access denied');
-        window.location.href = 'https://example.com';
-    }
-};
-
-
 Reveal.initialize({
 	hash: true,
 	plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
