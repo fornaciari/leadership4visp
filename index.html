@@ -87,7 +87,6 @@
 <div class="slides">
 
 <section>
-  <p id="error-message" style="color:red;" style="position:absolute; left:0px; top:-50px;"></p>
   <img src="tf_media/leadership/moria1-nobg.png" style="position:relative; left:120px; top:-100px; width:50%">
   <input type="password" id="password" placeholder="Enter password" style="position:relative; left:-220px; top:-370px;">
   <button onclick="checkPassword()" style="position:relative; left:-220px; top:-370px;">Ok</button>
@@ -1011,17 +1010,13 @@
 
   function checkPassword() {
     const passwordInput = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
     if (passwordInput === correctPassword) {
-      // Re-enable controls after the correct password is entered
       Reveal.initialize({
         controls: true,
         keyboard: true,
         touch: true
       });
       loadSlides();
-    } else {
-      errorMessage.textContent = 'Riprova!';
     }
   }
 
