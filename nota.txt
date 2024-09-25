@@ -1,0 +1,36 @@
+  const correctPassword = 'mellon';
+  Reveal.initialize({
+    controls: false,
+    keyboard: false,
+    touch: false
+  });
+
+  function checkPassword() {
+    const passwordInput = document.getElementById('password').value;
+    if (passwordInput === correctPassword) {
+      Reveal.initialize({
+        controls: true,
+        keyboard: true,
+        touch: true
+      });
+      loadSlides();
+    }
+  }
+
+  function loadSlides() {
+    const slidesContainer = document.getElementById('slides-container');
+    const slides = `
+      <section>
+      </section>
+    `;
+    slidesContainer.innerHTML = slides;
+	Reveal.next();
+    Reveal.sync();
+  }
+
+  Reveal.on('slidechanged', function(event) {
+    const slidesContainer = document.getElementById('slides-container');
+    if (!slidesContainer.innerHTML) {
+      Reveal.slide(0); // Redirect to the first slide if slides are not unlocked
+    }
+  });
